@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="backend.php">
+        <h2>This is Form</h2>
+        <label for="Name">name</label>
+        <div>
+            <input type="text" id="Name" name="myName">        
+        </div>
+        <label for="Role">Role</label>
+        <div>
+            <input type="text" name="myRole" id="Role">
+        </div>
+        <label for="Email">Email</label>
+        <div>
+            <input type="email" name="myEmail" id="Email">
+        </div>
+        <label for="Date">Date</label>
+        <div>
+            <input type="date" name="myDate" id="Date">
+        </div>
+        <label for="Car">Car</label>
+        <div>
+            <select name="myCar" id="Car">
+                <option value="Scrpn">Scorpio</option>
+                <option value="Frtnr">Fortuner</option>
+                <option value="Inva">Innova</option>
+                <option value="Crta">Creata</option>
+                <option value="" selected></option>
+            </select>
+        </div>
+        <label for="About">About</label>
+        <div>
+            <textarea name="myAbout" id="About" cols="50" rows="4"></textarea>
+        </div>
+        <label for="Eligible">Are you eligible</label>
+        <div>
+            <input type="checkbox" name="myEligibility" id="Are you Eligible">
+        </div>
+        <label for="Gender">Gender</label>
+        <div>
+            Male<input type="radio" name="myGender" id="Gender">
+            Female<input type="radio" name="myGender" id="Gender">
+            other<input type="radio" name="myGender" id="Gender">
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset now">
+        </div>
+    </form>
+
+    
+</body>
+</html>

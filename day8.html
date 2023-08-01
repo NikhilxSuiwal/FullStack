@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input Tags</title>
+</head>
+<body>
+    <h2>This is HTML  Forms </h2>
+    <form action="backend.php">
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="myName" id="name">
+        </div><br>
+        <label for="Email">Email</label>
+        <div>
+            <input type="email" name="myEmail" id="Email">
+        </div><br>
+        <label for="Role">Role</label>
+        <div>
+            <input type="text" name="myRole" id="Role">
+        </div><br>
+        <label for="Are you eligible">Are you eligible</label>
+        <div>
+            <input type="checkbox" name="myEligibility" id="Are you eligible">
+        </div><br>
+        <label for="Gender">Gender</label>
+        <div>
+            Male<input type="radio" name="myGender" id="Gender"> Female<input type="radio" name="myGender" id="Gender">
+            Other<input type="radio" name="myGender" id="Gender">
+        </div><br>
+        <label for="About Yourself">About Yourself</label>
+        <div>
+            <br></Yourself:br><textarea name="description"  cols="50" rows="5" id="About Yourself"></textarea>
+        </div><br>
+        <label for="Car">Car</label>
+        <div>
+            <select name="myCar" id="Car">
+                <option value="Sco">Scorpio</option>
+                <option value="Frtnr">Fortuner</option>
+                <option value="Swf">Swift</option>
+                <option value="LC">Land Cruiser</option>
+                <option value="" selected></option>
+            </select>
+        </div><br>
+        <div>
+            <input type="submit" name="Submit now">
+            <input type="reset" name="Reset now">
+        </div>
+    </form>
+
+   
+     
+</body>
+</html>
