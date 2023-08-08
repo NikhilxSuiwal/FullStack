@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float[Alignment]</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Dosis:wght@500&family=Ubuntu:ital,wght@1,300;1,400&display=swap" rel="stylesheet">
+    <style>
+        *{
+box-sizing: border-box;
+
+        }
+        body{
+            font-family: 'Ubuntu', sans-serif;;
+        }
+        .container{
+            width: 900px;
+            border: 3px solid grey;
+            margin: auto;
+            background-color: rgb(174, 203, 218);
+        }
+        h1{
+            margin:23px auto;
+            width: 450px;
+        }
+        .items{
+             border: 3px solid darkred;
+             margin: 12px 3px;
+             padding: 12px 3px;
+             background-color: rgb(165, 240, 215);
+        }
+        #fruits{
+            float: left;
+            width: 48%;
+        }
+        #computer{
+            float: right;
+            width: 48%;
+        }
+        #stationary{
+            /* float: left; */
+            clear: both;
+            width: 100%;
+        }
+        p, h3{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to my Store</h1>
+        <div id="fruits" class="items">
+            <h3>Fruits</h3>
+            <p id="fruitpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime corrupti autem ut velit aut quos mollitia sequi temporibus quaerat in atque nostrum, repellat sapiente est.</p>
+        </div>
+        <div id="computer" class="items">
+            <h3>Computers</h3>
+            <p id="computerpara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime corrupti autem ut velit aut quos mollitia sequi temporibus quaerat in atque nostrum, repellat sapiente est.</p>
+        </div>
+        <div id="stationary" class="items">
+            <h3>Stationary</h3>
+            <p id="stationarypara" class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime corrupti autem ut velit aut quos mollitia sequi temporibus quaerat in atque nostrum, repellat sapiente est.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

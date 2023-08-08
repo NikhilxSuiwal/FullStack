@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS selector</title>
+    <style>
+        /* element selector */
+        #heading{
+            
+            border: 2px solid darkgoldenrod;
+            background-color: darkseagreen;
+            text-align: center;
+        }
+        p{
+            border: 2px solid darkseagreen;
+        }
+        p{
+            color:coral;
+            font-size: 35px;
+            background-color: bisque;
+        }
+        #idselect{
+            color: cadetblue;
+        }
+        .classselect{
+            color: crimson;
+        }
+        /* this is a grouping selector  */
+        footer,span{
+            color: darkmagenta;
+            font-size: 25px;
+            background-color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading">CSS Selectors</h1>
+    <p>This is a simple paragraph to demonstrate css selector</p>
+    <p id="idselect">This is a Another simple paragraph to demonstrate css selector</p> <!--this is a css id selector-->
+    <p class="classselect">This is a Another simple paragraph to demonstrate css selector</p> <!--this is a css class selector-->
+    <p>This is a Another simple paragraph to demonstrate css selector</p>
+    <div>
+        <p>This is a Another simple paragraph to demonstrate css selector</p>
+    </div>
+    <footer>This is a Footer</footer>
+    <span>This is a Span</span>
+</body>
+</html>

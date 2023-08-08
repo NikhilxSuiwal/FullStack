@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Forms</title>
+    <style>
+        .form{
+            font-size: xx-large;
+            
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center; font-size: 55px;">This Is a Form</h2>
+    <form action="backend.php" class="form">
+        <label for="Name">Name</label>
+        <div>
+            <input type="text" id="Name" name="myName">
+        </div>
+        <label for="Role">Role</label>
+        <div>
+            <input type="text" id="Role" name="myRole">
+        </div>
+        <label for="Email">Email</label>
+        <div>
+            <input type="email" id="Email" name="myEmail">
+        </div>
+       
+        <label for="Cars">Cars</label>
+        <div>
+            <select name="myCar" id="Cars">
+                <option value="Frtnr">Fortuner</option>
+                <option value="Thr">Thar</option>
+                <option value="Scrpo">Scorpio</option>
+                <option value="Jeep">Jeep Wrangler</option>
+                <option value="" selected></option>
+            </select>
+        </div>
+        <label for="Gender">Gender</label>
+        <div>
+            Male<input type="radio" id="Gender" name="myGender">
+            Female<input type="radio" id="Gender" name="myGender">
+            Other<input type="radio" id="Gender" name="myGender">
+        </div>
+    </form>
+</body>
+</html>
