@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation & Key Frames</title>
+    <style>
+        .container {
+            display: flex;
+            background-color: lavenderblush;
+        }
+
+        .box {
+            position: relative;
+            /* animation-name: Nikhil07; */
+            animation-name: Nikhil2;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: alternate;
+            animation-timing-function: ease-in-out;
+            animation-direction: reverse;
+        }
+        .box img{
+            width: 40%;
+        }
+
+        @keyframes Nikhil2 {
+            0% {
+                /* background-color: red; */
+                left: 0px;
+                top: 0px;
+            }
+
+            25% {
+                /* background-color: yellow; */
+                left: 450px;
+                top: 0px;
+            }
+
+            50% {
+                /* background-color: blue; */
+                left: 450px;
+                top: 250px;
+            }
+
+            75% {
+                /* background-color: green; */
+                left: 0px;
+                top: 250px;
+            }
+
+            100% {
+                /* background-color: red; */
+                left: 0px;
+                top: 0px;
+            }
+        }
+
+        @keyframes Nikhil07 {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 1400px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img src="img/2-2-car-transparent.png" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

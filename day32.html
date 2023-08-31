@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute and nth child Pseudo Selectors</title>
+    <style>
+        .container{
+            display: block;
+            width: 244px;
+            margin: auto;
+
+        }
+     input{
+        display: block;
+     }
+     input[type='text']{
+        border: 2px solid aqua;
+     }
+     a[target]{
+        color: aqua;
+        background-color: lavenderblush;
+        font-size: 50px;
+     }
+     li:nth-child(4){
+        background-color: aqua;
+        font-size: 40px;
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" class="form-control">
+            <a href="https://google.com" target="_blank">Go To Google</a>
+            <input type="text" placeholder="Enter Your Name">
+            <input type="password" placeholder="Enter Your Password">
+            <input type="submit " value="Submit">
+        </form>
+        <ul>
+            <li class="item" id="item-1">Item1</li>
+            <li class="item" id="item-2">Item2</li>
+            <li class="item" id="item-3">Item3</li>
+            <li class="item" id="item-4">Item4</li>
+            <li class="item" id="item-5">Item5</li>
+        </ul>
+    </div>
+</body>
+</html>

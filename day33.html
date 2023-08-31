@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before And After Pseudo Selectors</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Caveat:wght@700&family=DM+Sans:ital,opsz,wght@1,9..40,500&family=Dosis:wght@500&family=Josefin+Sans:ital,wght@0,400;1,700&family=Libre+Franklin:ital,wght@1,300&family=M+PLUS+Rounded+1c:wght@500&family=Montserrat:wght@700&family=Poppins&family=Preahvihear&family=Roboto&family=Roboto+Condensed&family=Ubuntu:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            background-color: black;
+            color: aliceblue;
+            margin: 0;
+            padding: 0;
+        }
+        header::before{
+            content: "";
+            background: url('img/jezael-melgoza-2FiXtdnVhjQ-unsplash.jpg') no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: .3;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+
+        }
+        .navigation{
+            font-family: 'Josefin Sans', sans-serif;
+            display: flex;
+            font-size: 20px;
+            justify-content: center;
+        }
+        li{
+            list-style: none;
+            padding: 20px 33px;
+        }
+        li:hover{
+            cursor: pointer;
+            color: aqua;
+        }
+       section{
+        height: 444px;
+        align-items: center;
+        /* border: 2px solid black; */
+        border-radius: 20px;
+        margin: 5px 20px;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       }
+       h1{
+        color: lavender;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 4rem;
+       }
+       p{
+        color: greenyellow;
+        text-align: center;
+        margin: 0 40px;
+       }
+       /* section::before{
+        content: "This Is a Content";
+        font-size: 20px;
+       } */
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h1> Welcome To Coding World</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, incidunt magni! Libero at aspernatur rem modi obcaecati consequuntur eaque, repellat omnis eius accusamus nemo itaque error, amet non ullam doloremque aperiam nam debitis facilis?</p>
+    </section>
+</body>
+</html>
